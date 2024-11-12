@@ -4,7 +4,7 @@ import { Col, Card, Button } from 'react-bootstrap';
 const ItemCard = ({ item }) => {
   const handleAddToCart = async () => {
     try {
-      await fetch('http://localhost:5000/api/add-to-mycourses', {
+      await fetch('https://e-learn-full-stack-backend1.onrender.com//api/add-to-mycourses', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
