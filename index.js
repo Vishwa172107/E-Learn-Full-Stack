@@ -41,9 +41,10 @@ app.post('/api/add-to-mycourses', async (req, res) => {
 
   try {
     // Check if item is already in the cart
-    let cartItem = await Courses.findOne({ name });
+    let cartItem = await Mycourses.findOne({ name });
+    if(!cartItem){
     cartItem = new Mycourses({ name, img, price });
-      await cartItem.save();
+      await cartItem.save();}
     res.status(201).json({ message: 'Item added to cart', cartItem });
   } catch (error) {
     res.status(500).json({ error: 'Error adding item to cart' });
