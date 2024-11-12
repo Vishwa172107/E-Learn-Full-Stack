@@ -8,7 +8,7 @@ const Mycourses = require('./backend/mycourses');
 const Courses = require('./backend/courses');
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({ origin: 'http://localhost:5173' })); // Allow requests from the React frontend
