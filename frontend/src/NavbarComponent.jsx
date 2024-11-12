@@ -14,7 +14,7 @@ const NavbarComponent = () => {
             <Nav.Link href="#course-section">Courses</Nav.Link>
 
             {/* Update Add to Cart link to point to /cart */}
-            <Nav.Link href="http://localhost:5000/mycourses">My Courses</Nav.Link>
+            <Nav.Link href="https://e-learn-full-stack-backend1.onrender.com/mycourses">My Courses</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

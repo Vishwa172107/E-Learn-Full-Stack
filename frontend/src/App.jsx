@@ -10,7 +10,7 @@ const App = () => {
 
   // Fetch vegetables data from the backend API
   useEffect(() => {
-    fetch('http://localhost:5000/api/courses')
+    fetch('https://e-learn-full-stack-backend1.onrender.com/api/courses')
       .then(response => response.json())
       .then(data => setcourses(data))
       .catch(error => console.error('Error fetching coursees:', error));
